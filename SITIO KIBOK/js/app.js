@@ -8,6 +8,7 @@
   var CFG = window.KIBOK || {};
   var PRODUCTOS = window.PRODUCTOS || [];
   var CATEGORIAS = window.CATEGORIAS || [];
+  var ARTICULOS = window.ARTICULOS || [];
   var LLAVE = "kibok.carrito.v1";
   var LLAVE_EDAD = "kibok.edad.v1";
 
@@ -34,6 +35,18 @@
   }
   function img(nombre, chico) {
     return "img/productos/" + nombre + (chico ? "-sm" : "") + ".webp";
+  }
+  function imgBlog(art) {
+    return "img/" + art.imagenDir + "/" + art.imagen + ".webp";
+  }
+  function articulo(id) {
+    for (var i = 0; i < ARTICULOS.length; i++) if (ARTICULOS[i].id === id) return ARTICULOS[i];
+    return null;
+  }
+  function fechaES(f) {
+    var meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+    var d = new Date(f + "T12:00:00");
+    return d.getDate() + " de " + meses[d.getMonth()] + " de " + d.getFullYear();
   }
   function precio(n) {
     if (n == null) return null;
@@ -449,6 +462,72 @@
     window.open("https://wa.me/" + CFG.whatsapp + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
   }
 
+  /* -------------------------- blog -------------------------- */
+  function tarjetaBlog(a) {
+    return '<article class="blog-card">' +
+      '<a href="nota.html?id=' + encodeURIComponent(a.id) + '" class="blog-card__img">' +
+        '<img src="' + imgBlog(a) + '" alt="' + esc(a.titulo) + '" loading="lazy">' +
+      '</a>' +
+      '<div class="blog-card__cuerpo">' +
+        '<span class="blog-card__cat">' + esc(a.categoria) + '</span>' +
+        '<h3 class="blog-card__titulo"><a href="nota.html?id=' + encodeURIComponent(a.id) + '">' + esc(a.titulo) + '</a></h3>' +
+        '<p class="blog-card__resumen">' + esc(a.resumen) + '</p>' +
+        '<span class="blog-card__fecha">' + fechaES(a.fecha) + '</span>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function initBlog() {
+    var raiz = $("[data-blog]");
+    if (!raiz) return;
+    raiz.innerHTML = ARTICULOS.map(tarjetaBlog).join("");
+  }
+
+  function initNota() {
+    var raiz = $("[data-nota]");
+    if (!raiz) return;
+    var id = new URLSearchParams(location.search).get("id");
+    var a = articulo(id);
+
+    if (!a) {
+      raiz.innerHTML = '<div class="vacio"><h2>Artículo no encontrado</h2>' +
+        '<p>Puede que el enlace haya cambiado.</p>' +
+        '<a class="btn" href="blog.html">Ver blog</a></div>';
+      return;
+    }
+
+    document.title = a.titulo + " · " + (CFG.marca || "Kibok a k'uuts");
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", a.resumen);
+
+    var cuerpo = a.contenido.map(function (b) {
+      if (b.tipo === "subtitulo") return "<h2>" + esc(b.texto) + "</h2>";
+      return "<p>" + esc(b.texto) + "</p>";
+    }).join("");
+
+    raiz.innerHTML = '' +
+      '<article class="nota-articulo">' +
+        '<nav class="migas"><a href="index.html">Inicio</a> / <a href="blog.html">Blog</a> / <span>' + esc(a.titulo) + '</span></nav>' +
+        '<div class="nota-articulo__cabecera">' +
+          '<p class="nota-articulo__cat">' + esc(a.categoria) + '</p>' +
+          '<h1>' + esc(a.titulo) + '</h1>' +
+          '<span class="nota-articulo__fecha">' + fechaES(a.fecha) + '</span>' +
+        '</div>' +
+        '<div class="nota-articulo__hero"><img src="' + imgBlog(a) + '" alt="' + esc(a.titulo) + '"></div>' +
+        '<div class="nota-articulo__cuerpo">' + cuerpo + '</div>' +
+        '<div class="nota-articulo__cta">' +
+          '<p>¿Listo para armar tu ritual? Conoce nuestras piezas.</p>' +
+          '<a class="btn" href="tienda.html">Ver catálogo</a>' +
+        '</div>' +
+      '</article>';
+  }
+
+  function initBlogPreview() {
+    var raiz = $("[data-blog-preview]");
+    if (!raiz) return;
+    raiz.innerHTML = ARTICULOS.slice(0, 3).map(tarjetaBlog).join("");
+  }
+
   /* -------------------- aviso de edad ----------------------- */
   function initEdad() {
     var caja = $("[data-edad]");
@@ -493,6 +572,9 @@
     initTienda();
     initProducto();
     initCarrito();
+    initBlog();
+    initNota();
+    initBlogPreview();
   });
 
   window.Kibok = { agregar: agregar, leer: leer, totales: totales, toast: toast };

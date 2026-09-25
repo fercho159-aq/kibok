@@ -383,6 +383,60 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
 }
 .toast.visible{opacity:1;transform:translate(-50%,0)}
 
+/* ---------------- Blog ---------------- */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:32px}
+.blog-card{
+  background:#fff;border:1px solid var(--linea);transition:var(--trans);
+  display:flex;flex-direction:column;overflow:hidden
+}
+.blog-card:hover{box-shadow:0 18px 44px -30px rgba(0,0,0,.35)}
+.blog-card__img{
+  aspect-ratio:16/9;overflow:hidden;background:var(--crema)
+}
+.blog-card__img img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+.blog-card:hover .blog-card__img img{transform:scale(1.05)}
+.blog-card__cuerpo{padding:28px 26px 30px;display:flex;flex-direction:column;gap:10px;flex:1}
+.blog-card__cat{
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--oro);font-weight:500
+}
+.blog-card__titulo{font-family:var(--serif);font-size:22px;line-height:1.25}
+.blog-card__titulo a{transition:color var(--trans)}
+.blog-card__titulo a:hover{color:var(--oro)}
+.blog-card__resumen{color:var(--suave);font-size:14px;line-height:1.65;flex:1}
+.blog-card__fecha{font-size:11.5px;color:var(--tenue);letter-spacing:.04em;margin-top:auto;padding-top:8px}
+
+.nota-articulo{max-width:740px;margin:0 auto}
+.nota-articulo__cabecera{margin-bottom:40px}
+.nota-articulo__cat{
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--oro);font-weight:500;margin-bottom:14px
+}
+.nota-articulo h1{
+  font-family:var(--serif);font-size:clamp(30px,4.4vw,48px);font-weight:300;line-height:1.15;margin-bottom:14px
+}
+.nota-articulo__fecha{font-size:12.5px;color:var(--tenue);letter-spacing:.04em}
+.nota-articulo__hero{
+  aspect-ratio:16/9;overflow:hidden;border:1px solid var(--linea);margin-bottom:44px
+}
+.nota-articulo__hero img{width:100%;height:100%;object-fit:cover}
+.nota-articulo__cuerpo p{color:var(--texto);font-size:16px;line-height:1.75;margin-bottom:1.4em}
+.nota-articulo__cuerpo h2{
+  font-family:var(--serif);font-size:clamp(22px,3vw,30px);font-weight:400;
+  margin:2em 0 .8em;color:var(--negro)
+}
+.nota-articulo__cta{
+  border-top:1px solid var(--linea);margin-top:48px;padding-top:36px;text-align:center
+}
+.nota-articulo__cta p{color:var(--suave);font-size:15px;margin-bottom:18px}
+
+.blog-preview{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:32px
+}
+@media (max-width:640px){
+  .blog-grid,.blog-preview{grid-template-columns:1fr}
+  .blog-card__cuerpo{padding:20px 18px 24px}
+  .blog-card__titulo{font-size:19px}
+}
+
 /* ---------------- Utilidades ---------------- */
 .migas{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue);margin-bottom:26px}
 .migas a:hover{color:var(--negro)}
