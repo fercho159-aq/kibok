@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Catálogo · Kibok a k'uuts</title>
+  <meta name="description" content="Catálogo completo de humidores, cortadoras, encendedores y ponchadores Kibok a k'uuts.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12100e">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="tira">Envíos a todo México · Venta exclusiva para mayores de 18 años</div>
+
+  <header class="header">
+    <div class="contenedor header__barra">
+      <button class="icono hamburguesa" data-menu aria-label="Menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a class="logo" href="index.html" aria-label="Kibok a k'uuts, inicio">
+        <img src="img/marca/logo.webp" alt="Kibok a k'uuts — Aroma a tabaco" width="586" height="304">
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="tienda.html" aria-current="page">Catálogo</a>
+        <a href="tienda.html?c=humidores">Humidores</a>
+        <a href="tienda.html?c=cortadoras">Cortadoras</a>
+        <a href="tienda.html?c=encendedores">Encendedores</a>
+        <a href="tienda.html?c=ponchadores">Ponchadores</a>
+      </nav>
+      <div class="acciones">
+        <a class="icono" data-wa-general href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        </a>
+        <a class="icono" href="carrito.html" aria-label="Ver pedido">
+          <svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="contador" data-contador hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <div class="titulo" data-encabezado>
+        <p class="eyebrow">Catálogo</p>
+        <h1 style="font-family:var(--serif);font-weight:300;font-size:clamp(30px,4.4vw,48px)">Todas las piezas</h1>
+        <p data-desc></p>
+      </div>
+
+      <div class="barra-filtros">
+        <div class="chips" data-chips></div>
+        <div class="herramientas">
+          <span class="conteo" data-conteo></span>
+          <input class="campo" type="search" placeholder="Buscar modelo…" data-busqueda aria-label="Buscar">
+          <select class="campo" data-orden aria-label="Ordenar">
+            <option value="relevancia">Destacados</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+            <option value="nombre">Nombre A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rejilla" data-rejilla></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__grid">
+      <div>
+        <div class="footer__logo"><img src="img/marca/logo.webp" alt="Kibok a k'uuts" width="586" height="304"></div>
+        <p style="color:var(--suave);font-size:13.5px;max-width:280px">
+          Accesorios para el ritual del puro: humidores, cortadoras, encendedores y ponchadores.
+        </p>
+      </div>
+      <div>
+        <h4>Catálogo</h4>
+        <ul>
+          <li><a href="tienda.html?c=humidores">Humidores</a></li>
+          <li><a href="tienda.html?c=cortadoras">Cortadoras</a></li>
+          <li><a href="tienda.html?c=encendedores">Encendedores</a></li>
+          <li><a href="tienda.html?c=ponchadores">Ponchadores</a></li>
+          <li><a href="tienda.html">Ver todo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a data-wa-general href="#" target="_blank" rel="noopener">Pedidos por WhatsApp</a></li>
+          <li><a href="carrito.html">Mi pedido</a></li>
+          <li><a href="#" data-email>correo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a data-wa-general href="#" target="_blank" rel="noopener"><span data-tel></span></a></li>
+          <li><a href="#" data-email>correo</a></li>
+          <li><span style="font-size:13.5px;color:var(--suave)">Mérida, Yucatán · México</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor footer__legal">
+      <span>© <span data-anio></span> Kibok a k'uuts · Aroma a tabaco</span>
+      <span>Venta prohibida a menores de 18 años</span>
+    </div>
+  </footer>
+
+  <div class="edad" data-edad>
+    <div class="edad__caja">
+      <img src="img/marca/emblema.png" alt="" width="512" height="512">
+      <h2>¿Eres mayor de edad?</h2>
+      <p>Este sitio vende accesorios para tabaco. Necesitas tener 18 años o más para entrar.</p>
+      <div class="edad__botones">
+        <button class="btn btn--claro" data-edad-si>Sí, soy mayor de 18</button>
+        <button class="btn btn--linea" style="color:#fff;border-color:rgba(255,255,255,.4)" data-edad-no>No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
