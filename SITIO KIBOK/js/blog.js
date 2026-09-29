@@ -3,6 +3,32 @@
    ========================================================= */
 window.ARTICULOS = [
   {
+    id: "accesorios-para-puros-ritual-humidor-corte-encendido",
+    titulo: "El Ritual del Puro: Cómo los Accesorios Correctos Elevan la Experiencia",
+    resumen: "Ni el habano más exclusivo se disfruta igual sin las herramientas adecuadas. Conservación, precisión en el corte y un encendido limpio son los tres pilares que convierten un momento cualquiera en un verdadero ritual.",
+    fecha: "2026-09-28",
+    categoria: "Accesorios",
+    imagen: "accesorios-para-puros-ritual-humidor-corte-encendido",
+    imagenDir: "blog",
+    contenido: [
+      { tipo: "parrafo", texto: "Para el verdadero conocedor, fumar un puro no es simplemente un acto pasajero; es un ritual de pausa, contemplación y disfrute sensorial. Desde la selección de la hoja hasta la última bocanada, cada detalle cuenta. Sin embargo, incluso el habano más exclusivo puede perder su encanto si no se cuenta con las herramientas adecuadas para su conservación, corte y encendido." },
+      { tipo: "parrafo", texto: "En Kibok a Kuuts, entendemos que los accesorios para puros no son un simple complemento, sino elementos indispensables que garantizan que cada experiencia sea perfecta. A continuación, exploramos los pilares fundamentales que todo amante del buen tabaco debe dominar." },
+      { tipo: "subtitulo", texto: "1. Conservación impecable: el corazón del humidor" },
+      { tipo: "parrafo", texto: "El enemigo número uno de un buen puro es la oscilación drástica de la humedad y la temperatura. Un puro demasiado seco se consumirá rápido, de manera desigual y con un sabor áspero; uno demasiado húmedo tendrá problemas de tiro y un perfil pesado." },
+      { tipo: "parrafo", texto: "• El papel del humidor: mantener los niveles óptimos entre el 65% y el 72% de humedad relativa es clave para preservar los aceites esenciales del tabaco." },
+      { tipo: "parrafo", texto: "• La inversión: contar con un buen sistema de almacenamiento garantiza que tus piezas maduren adecuadamente y mantengan intactas sus notas aromáticas con el paso del tiempo." },
+      { tipo: "subtitulo", texto: "2. Precisión en el corte: el umbral del disfrute" },
+      { tipo: "parrafo", texto: "El corte es el primer paso físico del ritual y define por completo el flujo del aire. Un corte impreciso puede desmoronar la capa o arruinar la estructura del puro." },
+      { tipo: "parrafo", texto: "• Cortadores especializados: contar con herramientas de corte limpio y afilado —como los cortadores de doble hoja o los modelos tipo V y perforadores— permite una apertura limpia que facilita una combustión uniforme desde el primer instante." },
+      { tipo: "subtitulo", texto: "3. El arte del encendido: calor limpio y controlado" },
+      { tipo: "parrafo", texto: "Encender un puro requiere paciencia y el elemento térmico adecuado. Evita a toda costa usar cerillas comunes con azufre o encendedores de gasolina tradicional, ya que impregnan el tabaco de sabores químicos indeseados." },
+      { tipo: "parrafo", texto: "• Encendedores de alta precisión: los encendedores de soplete (tipo torch) o flama doble/triple aseguran una fuente de calor estable y uniforme, permitiendo encender el pie del puro sin quemar la capa de forma agresiva." },
+      { tipo: "subtitulo", texto: "Eleva tu experiencia con Kibok a Kuuts" },
+      { tipo: "parrafo", texto: "Disfrutar de un buen puro es un homenaje al tiempo bien invertido. Dotar tu espacio y tus hábitos con accesorios de alta calidad transforma cada encuentro en un momento memorable." },
+      { tipo: "parrafo", texto: "¿Buscas equipar tu colección con piezas que combinen funcionalidad, diseño y distinción? Explora nuestra selección exclusiva de accesorios en Kibok a Kuuts y lleva tu ritual al siguiente nivel." }
+    ]
+  },
+  {
     id: "ritual-del-puro",
     titulo: "El ritual del puro: más que humo, una experiencia",
     resumen: "Fumar un puro no es solo encender tabaco. Es hacer una pausa, elegir el momento y disfrutar cada etapa. Te contamos por qué el ritual importa tanto como el puro mismo.",
