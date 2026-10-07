@@ -9,10 +9,11 @@ window.KIBOK = {
   // --- Contacto / pedidos --------------------------------
   // Número de WhatsApp en formato internacional SIN "+" ni espacios.
   // Ejemplo México: 52 + 10 dígitos  ->  "5219991234567"
-  whatsapp: "5219999999999",
+  whatsapp: "525543524724",
   email: "ventas@kibokakuuts.com",
-  instagram: "https://www.instagram.com/",
-  facebook: "https://www.facebook.com/",
+  instagram: "https://www.instagram.com/kibok.akuuts/",
+  facebook: "https://www.facebook.com/profile.php?id=61585663711894&locale=es_LA",
+  tiktok: "https://www.tiktok.com/@kibok.akuuts",
   ciudad: "Mérida, Yucatán · México",
 
   // --- Tienda --------------------------------------------

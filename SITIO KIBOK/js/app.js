@@ -129,8 +129,10 @@
     }).join("");
 
     return '' +
-      '<article class="tarjeta">' +
-        (p.destacado ? '<span class="etiqueta etiqueta--oro">Destacado</span>' : '') +
+      '<article class="tarjeta' + (p.promo ? ' tarjeta--promo' : '') + '">' +
+        (p.promo
+          ? '<span class="etiqueta etiqueta--rojo">' + esc(p.promo) + '</span>'
+          : (p.destacado ? '<span class="etiqueta etiqueta--oro">Destacado</span>' : '')) +
         '<a class="tarjeta__link" href="producto.html?id=' + encodeURIComponent(p.id) + '">' +
           '<span class="sr">' + esc(p.nombre) + '</span></a>' +
         '<div class="tarjeta__img">' +
@@ -172,9 +174,20 @@
           '<span>' + n + ' piezas</span></a>';
       }).join("");
     }
+    var promoRej = $("[data-promo-rejilla]");
+    if (promoRej) {
+      var enPromo = PRODUCTOS.filter(function (p) { return p.promo; });
+      if (enPromo.length) {
+        promoRej.innerHTML = enPromo.map(tarjeta).join("");
+        conectarAgregar(promoRej);
+        var sec = $("[data-promo-seccion]");
+        if (sec) sec.removeAttribute("hidden");
+      }
+    }
     var dest = $("[data-destacados]");
     if (dest) {
-      dest.innerHTML = PRODUCTOS.filter(function (p) { return p.destacado; }).slice(0, 8).map(tarjeta).join("");
+      // los que ya están en promo no se repiten en destacados
+      dest.innerHTML = PRODUCTOS.filter(function (p) { return p.destacado && !p.promo; }).slice(0, 8).map(tarjeta).join("");
       conectarAgregar(dest);
     }
   }

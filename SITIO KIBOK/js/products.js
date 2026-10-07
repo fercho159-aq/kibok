@@ -19,8 +19,9 @@ window.PRODUCTOS = [
     nombre: "Humidor Grande Tipo Caoba",
     modelo: "CH-0415",
     categoria: "humidores",
-    precio: null,
-    precioAnterior: null,
+    precio: 4550,
+    precioAnterior: 6500,
+    promo: "Oferta Navidad · 30% OFF",
     destacado: true,
     resumen: "Humidor de gran capacidad para 50 tabacos, acabado tipo caoba con higrómetro frontal.",
     descripcion: "Humidor de mesa con acabado laqueado tipo caoba y emblema en dorado. Interior forrado en cedro español, charolas divisorias y humidificador incluido. Higrómetro analógico integrado al frente para vigilar la humedad de un vistazo.",
@@ -32,8 +33,10 @@ window.PRODUCTOS = [
     nombre: "Humidor Grande con Cristal",
     modelo: "CH-0451",
     categoria: "humidores",
-    precio: null,
-    destacado: false,
+    precio: 4550,
+    precioAnterior: 6500,
+    promo: "Oferta Navidad · 30% OFF",
+    destacado: true,
     resumen: "Humidor para 50 tabacos con tapa de cristal y frente con vitrinas.",
     descripcion: "Humidor de exhibición con tapa de cristal templado y vitrinas laterales que dejan ver la colección sin abrirlo. Interior de cedro español con charolas y humidificador incluido.",
     specs: { "Capacidad": "50 tabacos", "Interior": "Cedro español", "Detalle": "Tapa y vitrinas de cristal", "Incluye": "Humidificador e higrómetro" },
@@ -44,7 +47,9 @@ window.PRODUCTOS = [
     nombre: "Humidor Grande con Marquetería",
     modelo: "CH-0433",
     categoria: "humidores",
-    precio: null,
+    precio: 4550,
+    precioAnterior: 6500,
+    promo: "Oferta Navidad · 30% OFF",
     destacado: true,
     resumen: "Humidor de madera con marquetería fina y emblema en dorado.",
     descripcion: "Pieza de colección: chapa de raíz con marquetería y filetes contrastantes hechos a mano. Interior de cedro español, separadores móviles, higrómetro y humidificador incluidos.",
@@ -207,6 +212,19 @@ window.PRODUCTOS = [
     specs: { "Tipo": "Guillotina de una mano", "Navaja": "Cerámica", "Cuerpo": "Negro mate" },
     imagenes: ["jt-699"]
   },
+  {
+    id: "jt-351-egypt",
+    nombre: "Cortador JT-351 Edición Egipto",
+    modelo: "JT-351 EGY",
+    categoria: "cortadoras",
+    precio: null,
+    destacado: true,
+    linea: "Edición especial",
+    resumen: "Cortador de doble hoja con grabado de jeroglíficos egipcios y acabado bronce.",
+    descripcion: "Edición especial de la línea JT-351 con cuerpo grabado al láser con jeroglíficos egipcios y acabado tono bronce. Doble hoja de acero inoxidable y navaja cerámica para un corte limpio. Pieza de colección para quien busca algo distinto.",
+    specs: { "Tipo": "Doble hoja (guillotina)", "Material": "Acero inoxidable", "Acabado": "Bronce con grabado láser", "Edición": "Especial Egipto" },
+    imagenes: ["jt-351-egypt"]
+  },
 
   /* -------------------- ENCENDEDORES --------------------- */
   {
@@ -235,6 +253,19 @@ window.PRODUCTOS = [
     colores: ["Oro", "Negro", "Azul"],
     imagenes: ["trc-001-oro", "trc-001-negro", "trc-001-azul"]
   },
+  {
+    id: "trc-004",
+    nombre: "Encendedor Soplete 4 Flamas",
+    modelo: "DURX 4F",
+    categoria: "encendedores",
+    precio: null,
+    destacado: true,
+    resumen: "Soplete recargable de cuatro flamas con depósito visible, disponible en cinco colores.",
+    descripcion: "Soplete compacto con cuatro flamas de gas butano a prueba de viento: cubre más superficie que un encendedor común y consigue un encendido parejo en segundos, aun en puros de calibre grueso. Depósito visible para controlar la carga, ajuste de intensidad y argolla para llevar al cinto.",
+    specs: { "Flamas": "4 (soplete)", "Combustible": "Gas butano (recargable)", "Extra": "Depósito visible y argolla" },
+    colores: ["Oro"],
+    imagenes: ["trc-004-oro"]
+  },
 
   /* --------------------- PONCHADORES --------------------- */
   {
@@ -259,6 +290,6 @@ window.PRODUCTOS = [
     resumen: "Ponchador de bolsillo con argolla, acabado negro mate.",
     descripcion: "Ponchador compacto de aluminio negro mate con broca de acero inoxidable y tapa de rosca que protege el filo. Se cuelga del llavero y siempre lo traes contigo.",
     specs: { "Tipo": "Ponchador de broca", "Material": "Aluminio anodizado", "Extra": "Tapa de rosca y argolla" },
-    imagenes: ["jt-708-1", "jt-708-2", "jt-708-3"]
+    imagenes: ["jt-708-1", "jt-708-2"]
   }
 ];

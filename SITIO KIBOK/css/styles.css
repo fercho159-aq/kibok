@@ -79,8 +79,18 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
   gap:20px;min-height:76px
 }
-.logo{display:flex;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:12px;color:var(--negro)}
 .logo img{height:38px;width:auto}
+.logo__emblema{height:40px;width:auto;flex:none}
+.logo__texto{display:flex;flex-direction:column;line-height:1}
+.logo__nombre{
+  font-family:var(--serif);font-size:22px;font-weight:500;
+  color:var(--negro);letter-spacing:.005em
+}
+.logo__lema{
+  font-size:9px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--tenue);font-weight:500;margin-top:4px
+}
 .nav{display:flex;gap:34px;justify-content:center}
 .nav a{
   font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--suave);
@@ -112,6 +122,9 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
   .hamburguesa{display:grid;order:-1}
   .logo{justify-content:center}
   .logo img{height:32px}
+  .logo__emblema{height:34px}
+  .logo__nombre{font-size:19px}
+  .logo__lema{font-size:8.5px;letter-spacing:.22em}
   .nav{
     position:fixed;inset:66px 0 auto;background:#fff;border-bottom:1px solid var(--linea);
     flex-direction:column;gap:0;padding:8px var(--gutter) 24px;
@@ -230,6 +243,38 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
   font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;padding:5px 10px
 }
 .etiqueta--oro{background:var(--oro)}
+.etiqueta--rojo{background:var(--rojo);color:#fff;letter-spacing:.14em}
+
+/* ---------------- Promo Navidad ---------------- */
+.promo-navidad{
+  background:linear-gradient(180deg,#1a1613 0%, #12100e 100%);
+  color:#f5efe3;
+  padding:clamp(60px,8vw,100px) 0 clamp(60px,8vw,100px);
+  position:relative;overflow:hidden
+}
+.promo-navidad::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 70% at 50% 0%, rgba(176,138,46,.18), transparent 70%)
+}
+.promo-navidad__cab{position:relative;text-align:center;max-width:720px;margin-inline:auto;margin-bottom:50px}
+.promo-navidad__eyebrow{color:var(--oro-claro)}
+.promo-navidad__titulo{
+  font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.4vw,46px);
+  margin:0 0 18px;color:#fff;letter-spacing:.01em;line-height:1.15
+}
+.promo-navidad__sub{color:#cfc8bd;font-size:15px;max-width:620px;margin:0 auto}
+.promo-navidad__sub s{color:#8a8378;margin-right:4px}
+.promo-navidad__sub strong{color:var(--oro-claro);font-weight:500;font-size:1.15em}
+.promo-navidad__rejilla{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+  padding-inline:var(--gutter);max-width:var(--max);margin:0 auto
+}
+.promo-navidad__rejilla .tarjeta{background:#fff;color:var(--texto)}
+.promo-navidad__rejilla .tarjeta__modelo,
+.promo-navidad__rejilla .tarjeta__nombre{color:inherit}
+@media (max-width:900px){.promo-navidad__rejilla{grid-template-columns:repeat(2,1fr);gap:20px}}
+@media (max-width:560px){.promo-navidad__rejilla{grid-template-columns:1fr}}
+.tarjeta--promo{outline:2px solid rgba(176,138,46,.35);outline-offset:-2px}
 
 /* ---------------- Filtros tienda ---------------- */
 .barra-filtros{
@@ -358,7 +403,10 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
 .footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .footer a{font-size:13.5px;color:var(--suave);transition:color var(--trans)}
 .footer a:hover{color:var(--negro)}
-.footer__logo img{height:44px;margin-bottom:16px}
+.footer__logo{margin-bottom:18px}
+.footer__logo .logo__emblema{height:52px}
+.footer__logo .logo__nombre{font-size:26px}
+.footer__logo .logo__lema{font-size:10px;letter-spacing:.26em;margin-top:5px}
 .footer__legal{
   border-top:1px solid var(--linea);padding-block:20px;display:flex;justify-content:space-between;
   gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--tenue)
