@@ -3,6 +3,35 @@
    ========================================================= */
 window.ARTICULOS = [
   {
+    id: "historia-y-proceso-artesanal-del-puro",
+    titulo: "Más allá del humo: la fascinante historia y el proceso artesanal detrás de cada puro",
+    resumen: "En cada calada hay siglos de tradición: rituales ancestrales, suelos privilegiados, manos expertas y meses de paciencia. Te contamos el recorrido completo de la hoja de tabaco hasta que llega a tus manos.",
+    fecha: "2026-10-12",
+    categoria: "Cultura del puro",
+    imagen: "historia-y-proceso-artesanal-del-puro",
+    imagenDir: "blog",
+    contenido: [
+      { tipo: "parrafo", texto: "Cuando sostenemos un puro encendido, solemos pensar en el momento de relajación que tenemos por delante. Sin embargo, en cada calada hay siglos de historia, una tradición agrícola impecable y un proceso artesanal que raya en la perfección." },
+      { tipo: "parrafo", texto: "Para los verdaderos entusiastas, conocer el origen de lo que fuma añade una capa completamente nueva de disfrute. En Kibok & Kuuts, creemos que un producto con tanta alma merece ser contado. Acompáñanos a descubrir el viaje que recorre una hoja de tabaco antes de llegar a tus manos." },
+      { tipo: "subtitulo", texto: "1. El origen milenario: de los rituales ancestrales al lujo moderno" },
+      { tipo: "parrafo", texto: "El consumo de tabaco no es un invento moderno; sus raíces se hunden en las civilizaciones precolombinas de América. Los mayas y otras culturas mesoamericanas ya utilizaban las hojas de tabaco en ceremonias religiosas, medicinales y políticas, considerándolo una planta sagrada que conectaba a los hombres con los dioses." },
+      { tipo: "parrafo", texto: "Con la llegada de los exploradores a América, esta tradición cruzó el Atlántico y evolucionó en las cortes europeas, transformándose poco a poco en el símbolo de estatus, sofisticación y contemplación que conocemos hoy en día." },
+      { tipo: "subtitulo", texto: "2. El alma del campo: tierra, clima y paciencia" },
+      { tipo: "parrafo", texto: "Un gran puro nace mucho antes de llegar a la fábrica; nace en la tierra. Regiones específicas del mundo poseen microclimas y suelos ricos en nutrientes —como los valles fértiles de Centroamérica y el Caribe— que otorgan al tabaco sus características únicas." },
+      { tipo: "subtitulo", texto: "El cuidado de la hoja" },
+      { tipo: "parrafo", texto: "Desde la siembra y la recolección manual de las hojas inferiores, medias y superiores (cada una con distinta exposición al sol y propiedades de sabor), hasta el proceso de curado y fermentación al aire libre, cada etapa requiere meses de paciencia para eliminar amargores y desarrollar la complejidad aromática." },
+      { tipo: "subtitulo", texto: "3. Maestría en las manos: el arte del torcedor" },
+      { tipo: "parrafo", texto: "A diferencia de los cigarrillos comerciales, que se producen de forma masiva en líneas de ensamblaje industriales, un puro prémium es una obra de arte hecha a mano." },
+      { tipo: "parrafo", texto: "El torcedor es el artesano que, con una habilidad heredada de generación en generación, selecciona la tripa, el capote y la capa. Con herramientas sencillas como una chaveta (cuchilla plana) y pegamento vegetal, arma cada pieza garantizando que la densidad del tabaco sea perfecta para permitir un tiro suave y una combustión uniforme." },
+      { tipo: "subtitulo", texto: "4. El reposo: el añejamiento que perfecciona el carácter" },
+      { tipo: "parrafo", texto: "Una vez terminado, el puro no se consume de inmediato. Las piezas necesitan un periodo de reposo en cámaras de añejamiento controladas, donde los sabores de las diferentes hojas se \"casan\" y se equilibran." },
+      { tipo: "parrafo", texto: "Es un proceso vivo: el tabaco sigue madurando, suavizando sus notas punzantes y adquiriendo esa redondez y elegancia que busca el conocedor." },
+      { tipo: "subtitulo", texto: "Honra la tradición con Kibok & Kuuts" },
+      { tipo: "parrafo", texto: "Fumar un puro es participar en una cadena de tradición artesanal que ha sobrevivido al paso de los siglos. Merece ser tratado con respeto, desde su conservación en un buen humidor hasta el corte y encendido con herramientas de primer nivel." },
+      { tipo: "parrafo", texto: "En Kibok & Kuuts celebramos esta cultura ofreciéndote los accesorios ideales para complementar tu ritual. Visita nuestra tienda y equipa tus momentos con la elegancia que merecen." }
+    ]
+  },
+  {
     id: "accesorios-para-puros-indispensables",
     titulo: "El Arte de Disfrutar un Buen Puro: Por qué los accesorios correctos lo cambian todo",
     resumen: "Un mal corte, un encendido con químicos o un humidor descuidado pueden arruinar incluso el puro más exclusivo. Te contamos cuáles son las cuatro herramientas indispensables del aficionado y por qué invertir en calidad transforma cada calada.",
