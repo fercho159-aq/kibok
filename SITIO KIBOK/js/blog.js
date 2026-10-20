@@ -3,6 +3,38 @@
    ========================================================= */
 window.ARTICULOS = [
   {
+    id: "accesorios-esenciales-para-fumar-puros",
+    titulo: "El Espíritu de la Pausa: La Colección Esencial de Kibok A Kuuts para Amantes del Tabaco",
+    resumen: "Fumar un puro es un paréntesis en la rutina, y cada gesto cuenta. Repasamos los tres pilares de una fumada magistral —el corte, el encendido y la conservación— y las piezas que marcan la diferencia entre fumar y vivir una experiencia.",
+    fecha: "2026-10-19",
+    categoria: "Accesorios",
+    imagen: "accesorios-esenciales-para-fumar-puros",
+    imagenDir: "blog",
+    contenido: [
+      { tipo: "parrafo", texto: "Hay aficiones que se miden en minutos, y hay pasiones que se miden en estados de ánimo. Fumar un buen puro pertenece sin duda a la segunda categoría. Es un paréntesis en la rutina, un espacio íntimo donde el tiempo parece ralentizarse entre volutas de humo, aromas complejos y una quietud difícil de encontrar en el mundo moderno." },
+      { tipo: "parrafo", texto: "Sin embargo, cualquier aficionado experimentado sabe que el éxito de ese momento sagrado no recae únicamente en la hoja. La experiencia se compone de gestos milimétricos: el tacto del tabaco estacionado, el sonido seco al abrir el estuche y la precisión de cada herramienta que interviene en el ritual." },
+      { tipo: "parrafo", texto: "En Kibok A Kuuts, creemos firmemente que cada accesorio debe estar a la altura de lo que fumas. No se trata solo de equipamiento, sino de elevar la experiencia completa." },
+      { tipo: "subtitulo", texto: "Los tres pilares de una fumada magistral" },
+      { tipo: "parrafo", texto: "Para que un puro entregue todo su potencial —desde las notas iniciales de madera y cuero hasta el cierre especiado—, cada etapa previa al encendido y durante la combustión debe cuidarse con esmero quirúrgico." },
+      { tipo: "subtitulo", texto: "1. El corte: la puerta de entrada al sabor" },
+      { tipo: "parrafo", texto: "Un corte impreciso puede arruinar una pieza excepcional en cuestión de segundos. Deshilachar la capa o comprimir el tabaco genera un tiro irregular que altera por completo la cata." },
+      { tipo: "parrafo", texto: "• Guillotinas de doble hoja: la opción clásica y definitiva para un corte limpio y transversal que permite un flujo de aire perfecto." },
+      { tipo: "parrafo", texto: "• Cortadores V-Cut y Punch: alternativas sofisticadas que concentran el humo o protegen la estructura de puros con cepajes robustos, adaptándose al estilo de cada fumador." },
+      { tipo: "subtitulo", texto: "2. El encendido: respeto absoluto al terroir" },
+      { tipo: "parrafo", texto: "El tabaco es una esponja natural de aromas. Usar una fuente de calor inadecuada —como cerillos con exceso de azufre o combustibles de baja calidad— impregna las primeras caladas con notas químicas indeseadas que arruinan el trabajo del maestro torcedor." },
+      { tipo: "parrafo", texto: "• Encendedores de flama torch: el equilibrio perfecto entre potencia, resistencia y control para un tostado uniforme y rápido." },
+      { tipo: "parrafo", texto: "• Fuego limpio: herramientas diseñadas específicamente para preservar la pureza organoléptica del habano desde la primera chispa." },
+      { tipo: "subtitulo", texto: "3. La conservación: manteniendo vivo el tesoro" },
+      { tipo: "parrafo", texto: "Un puro es un producto orgánico que sigue vivo. Su humedad debe mantenerse en un rango estricto para evitar que se queme demasiado rápido o que la hoja se fracture." },
+      { tipo: "parrafo", texto: "• Humidores de alta gama: piezas de ingeniería y diseño con interiores de cedro español que regulan la humedad de forma óptima y potencian el proceso de añejamiento." },
+      { tipo: "subtitulo", texto: "Estilo, carácter y distinción" },
+      { tipo: "parrafo", texto: "Los accesorios que elegimos reflejan nuestra forma de entender el ritual. Un cenicero robusto que preside la mesa, un estuche de viaje de piel que acompaña tus trayectos más importantes o un encendedor de tacto impecable son parte de la identidad de un verdadero aficionado." },
+      { tipo: "parrafo", texto: "En Kibok A Kuuts reunimos piezas diseñadas para quienes entienden que los detalles no son secundarios: son la diferencia entre fumar un puro y vivir una experiencia inolvidable." },
+      { tipo: "subtitulo", texto: "¿Cuál es tu pieza imprescindible?" },
+      { tipo: "parrafo", texto: "¿Cuál es la pieza sin la cual no puedes imaginar tu próxima sesión? Descubre nuestra selección exclusiva en Kibok A Kuuts y encuentra el complemento ideal para tu siguiente pausa." }
+    ]
+  },
+  {
     id: "historia-y-proceso-artesanal-del-puro",
     titulo: "Más allá del humo: la fascinante historia y el proceso artesanal detrás de cada puro",
     resumen: "En cada calada hay siglos de tradición: rituales ancestrales, suelos privilegiados, manos expertas y meses de paciencia. Te contamos el recorrido completo de la hoja de tabaco hasta que llega a tus manos.",
