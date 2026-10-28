@@ -3,6 +3,31 @@
    ========================================================= */
 window.ARTICULOS = [
   {
+    id: "cerillos-de-madera-para-encender-puros",
+    titulo: "El Origen del Fuego: Historia y Tradición de los Fósforos de Madera en el Ritual del Cigarro",
+    resumen: "La fuente de calor puede elevar o arruinar un gran puro. Te contamos por qué los puristas siguen eligiendo el cerillo largo de madera, qué lo hace una llama limpia y cómo esta costumbre viajó desde las tabaquerías del siglo XVIII hasta tu humidor.",
+    fecha: "2026-10-26",
+    categoria: "Cultura del Tabaco",
+    imagen: "cerillos-de-madera-para-encender-puros",
+    imagenDir: "blog",
+    contenido: [
+      { tipo: "parrafo", texto: "Detrás de cada gran puro hay una alquimia de tiempos remotos: hojas cultivadas en valles volcánicos, años de fermentación paciente y el trabajo experto de manos artesanas. Sin embargo, cuando llega el momento de encender esa obra maestra, la experiencia puede elevarse o arruinarse por completo dependiendo de un solo factor: la fuente de calor." },
+      { tipo: "parrafo", texto: "Mientras que la era moderna nos ha inundado de opciones prácticas y rápidas, los verdaderos puristas y coleccionistas siguen guardando una debilidad casi reverencial por los cerillos largos de madera. Más que un simple utensilio utilitario, encender un cigarro con madera es conectar con una tradición centenaria que respeta la integridad organoléptica del tabaco." },
+      { tipo: "subtitulo", texto: "La ciencia de una llama limpia" },
+      { tipo: "parrafo", texto: "El tabaco de alta calidad es una esponja aromática natural. Si alguna vez has encendido un puro con un encendedor común de gasolina o un cerillo de cocina convencional, habrás notado un dejo químico o sulfuroso en las primeras caladas. Ese pequeño detalle es suficiente para enmascarar las notas sutiles de cuero, cedro, cacao o pimienta que el master blender diseñó cuidadosamente." },
+      { tipo: "parrafo", texto: "• Cero interferencias químicas: a diferencia de los fósforos comerciales tratados con químicos agresivos para una combustión instantánea, los cerillos largos para puros están elaborados con maderas nobles neutras —generalmente álamo o cedro— y cabezas de fósforo de baja fricción que queman limpio." },
+      { tipo: "parrafo", texto: "• El ritual de la paciencia: el encendedor de gas o soplete ofrece inmediatez; el cerillo de madera exige un compás de espera. Debes aguardar a que la cabeza de azufre se consuma por completo, permitiendo que la llama alcance la madera antes de acercarla al pie del puro. Es una pausa deliberada que desacelera el tiempo." },
+      { tipo: "parrafo", texto: "• Control térmico: la flama de un cerillo de madera es más suave y maleable, lo que evita la carbonización agresiva de la capa y permite \"tostar\" el pie del habano de manera uniforme y elegante." },
+      { tipo: "subtitulo", texto: "Del cedro al fuego: un viaje histórico" },
+      { tipo: "parrafo", texto: "El uso de astillas y cerillos largos para encender tabaco no es casualidad; data de los tiempos en que los primeros fumadores europeos adoptaron las costumbres de las Antillas. En los siglos XVIII y XIX, las tabaquerías finas y los salones de caballeros contaban siempre con tarros de cerillas de madera noble o pequeños listones de cedro español encendidos en chimeneas secundarias." },
+      { tipo: "parrafo", texto: "Este método evitaba que los olores del queroseno o del aceite de ballena —utilizado en lámparas y encendedores primitivos de la época— arruinaran los tabacos más cotizados de La Habana. Con la invención del fósforo de seguridad a mediados del siglo XIX, la costumbre se refinó, dando paso a los cerillos largos de caja que hoy en día consideramos un símbolo de distinción clásica." },
+      { tipo: "subtitulo", texto: "Integrando la tradición en el estilo moderno" },
+      { tipo: "parrafo", texto: "Hoy en día, en Kibok A Kuuts, entendemos que el verdadero lujo reside en los detalles que conectan el pasado con el presente. Tener un estuche de cerillos de madera de alta gama junto a tu humidor, o combinarlos con un cenicero de diseño contemporáneo, demuestra que entiendes el tabaquismo no como un consumo rápido, sino como un ritual de contemplación." },
+      { tipo: "parrafo", texto: "La próxima vez que abras tu humidor y elijas esa pieza especial para la tarde, date el tiempo de prescindir de la prisa. Enciende un cerillo largo, observa cómo la madera toma vida y regálate la experiencia pura que el tabaco merece." },
+      { tipo: "parrafo", texto: "¿Eres de los que prefieren la precisión técnica de una flama torch o la elegancia ceremoniosa de un cerillo de madera? Explora más sobre la cultura del tabaco y encuentra todo lo necesario para tu ritual en Kibok A Kuuts." }
+    ]
+  },
+  {
     id: "accesorios-esenciales-para-fumar-puros",
     titulo: "El Espíritu de la Pausa: La Colección Esencial de Kibok A Kuuts para Amantes del Tabaco",
     resumen: "Fumar un puro es un paréntesis en la rutina, y cada gesto cuenta. Repasamos los tres pilares de una fumada magistral —el corte, el encendido y la conservación— y las piezas que marcan la diferencia entre fumar y vivir una experiencia.",
