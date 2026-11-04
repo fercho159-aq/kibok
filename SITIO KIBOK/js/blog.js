@@ -3,6 +3,28 @@
    ========================================================= */
 window.ARTICULOS = [
   {
+    id: "ritual-de-desconectar-con-un-buen-puro",
+    titulo: "El tiempo no se mide en minutos, se mide en momentos: el ritual de desconectar con un buen puro",
+    resumen: "Entre notificaciones y pendientes, la pausa se volvio un lujo. Seleccionar la pieza, cortar, encender y fumar sin prisa es una forma de meditacion activa que devuelve el control del tiempo. Asi se vive el ritual del puro.",
+    fecha: "2026-11-02",
+    categoria: "Ritual",
+    imagen: "ritual-de-desconectar-con-un-buen-puro",
+    imagenDir: "blog",
+    contenido: [
+      { tipo: "parrafo", texto: "Vivimos en la era de la inmediatez. Entre notificaciones constantes, juntas virtuales y pendientes que se acumulan en la agenda, el tiempo libre se ha convertido en un lujo escaso. Nos hemos acostumbrado a correr todo el día, a comer rápido y a responder mensajes al vuelo." },
+      { tipo: "parrafo", texto: "Sin embargo, hay momentos sagrados que se resisten a este ritmo acelerado. Espacios donde el reloj deja de importar y el único objetivo es estar presente. Uno de esos grandes refugios es el ritual de encender un puro." },
+      { tipo: "subtitulo", texto: "Una pausa consciente en medio del caos" },
+      { tipo: "parrafo", texto: "Disfrutar de un habano o un puro no es una actividad que se pueda hacer a prisa. Exige, por naturaleza, tiempo, paciencia y pausa." },
+      { tipo: "parrafo", texto: "Desde el momento en que abres tu estuche, seleccionas la pieza con calma, realizas el corte con precisión y aplicas la flama adecuada, entras en un estado mental diferente. Es una especie de meditación activa:" },
+      { tipo: "parrafo", texto: "• La preparación: te obliga a concentrarte en el presente, alejando las distracciones digitales." },
+      { tipo: "parrafo", texto: "• El ritmo: cada bocanada marca un compás lento, invitando a la introspección, a una buena lectura o a una charla profunda sin mirar el teléfono." },
+      { tipo: "parrafo", texto: "• El sabor: obliga a tus sentidos a detenerse y percibir las notas de madera, cuero, cacao o especias que evolucionan a lo largo de la fumada." },
+      { tipo: "subtitulo", texto: "El regalo de saber esperar" },
+      { tipo: "parrafo", texto: "En el mundo moderno, la prisa es la norma; la pausa, en cambio, es un acto de rebeldía y autocuidado. Rodearte de los accesorios correctos —un encendedor confiable, un cortador impecable y un cenicero con presencia— no solo eleva la experiencia estética, sino que rinde homenaje a ese tiempo que decides dedicarte exclusivamente a ti." },
+      { tipo: "parrafo", texto: "Porque al final del día, un buen puro no se fuma para pasar el rato, sino para habitarlo." }
+    ]
+  },
+  {
     id: "cerillos-de-madera-para-encender-puros",
     titulo: "El Origen del Fuego: Historia y Tradición de los Fósforos de Madera en el Ritual del Cigarro",
     resumen: "La fuente de calor puede elevar o arruinar un gran puro. Te contamos por qué los puristas siguen eligiendo el cerillo largo de madera, qué lo hace una llama limpia y cómo esta costumbre viajó desde las tabaquerías del siglo XVIII hasta tu humidor.",
