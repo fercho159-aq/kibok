@@ -243,39 +243,6 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
   font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;padding:5px 10px
 }
 .etiqueta--oro{background:var(--oro)}
-.etiqueta--rojo{background:var(--rojo);color:#fff;letter-spacing:.14em}
-
-/* ---------------- Promo Navidad ---------------- */
-.promo-navidad{
-  background:linear-gradient(180deg,#1a1613 0%, #12100e 100%);
-  color:#f5efe3;
-  padding:clamp(60px,8vw,100px) 0 clamp(60px,8vw,100px);
-  position:relative;overflow:hidden
-}
-.promo-navidad::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(60% 70% at 50% 0%, rgba(176,138,46,.18), transparent 70%)
-}
-.promo-navidad__cab{position:relative;text-align:center;max-width:720px;margin-inline:auto;margin-bottom:50px}
-.promo-navidad__eyebrow{color:var(--oro-claro)}
-.promo-navidad__titulo{
-  font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.4vw,46px);
-  margin:0 0 18px;color:#fff;letter-spacing:.01em;line-height:1.15
-}
-.promo-navidad__sub{color:#cfc8bd;font-size:15px;max-width:620px;margin:0 auto}
-.promo-navidad__sub s{color:#8a8378;margin-right:4px}
-.promo-navidad__sub strong{color:var(--oro-claro);font-weight:500;font-size:1.15em}
-.promo-navidad__rejilla{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
-  padding-inline:var(--gutter);max-width:var(--max);margin:0 auto
-}
-.promo-navidad__rejilla .tarjeta{background:#fff;color:var(--texto)}
-.promo-navidad__rejilla .tarjeta__modelo,
-.promo-navidad__rejilla .tarjeta__nombre{color:inherit}
-@media (max-width:900px){.promo-navidad__rejilla{grid-template-columns:repeat(2,1fr);gap:20px}}
-@media (max-width:560px){.promo-navidad__rejilla{grid-template-columns:1fr}}
-.tarjeta--promo{outline:2px solid rgba(176,138,46,.35);outline-offset:-2px}
-
 /* ---------------- Filtros tienda ---------------- */
 .barra-filtros{
   display:flex;align-items:center;justify-content:space-between;gap:24px;
