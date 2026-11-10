@@ -287,6 +287,6 @@ window.PRODUCTOS = [
     resumen: "Ponchador de bolsillo con argolla, acabado negro mate.",
     descripcion: "Ponchador compacto de aluminio negro mate con broca de acero inoxidable y tapa de rosca que protege el filo. Se cuelga del llavero y siempre lo traes contigo.",
     specs: { "Tipo": "Ponchador de broca", "Material": "Aluminio anodizado", "Extra": "Tapa de rosca y argolla" },
-    imagenes: ["jt-708-1", "jt-708-2"]
+    imagenes: ["jt-708-1"]
   }
 ];
