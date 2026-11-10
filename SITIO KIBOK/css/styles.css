@@ -195,7 +195,6 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
 }
 .categoria:hover{background:var(--crema)}
 .categoria img{height:150px;width:auto;margin:0 auto 22px;object-fit:contain;
-  mix-blend-mode:multiply;
   transition:transform var(--trans)}
 .categoria:hover img{transform:translateY(-6px) scale(1.03)}
 .categoria h3{font-size:22px;margin-bottom:6px}
@@ -217,7 +216,6 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
 }
 .tarjeta__img img{
   width:100%;height:100%;object-fit:contain;padding:8%;
-  mix-blend-mode:multiply;
   transition:transform .6s cubic-bezier(.2,.7,.3,1),opacity var(--trans)
 }
 .tarjeta__img img.alterna{position:absolute;inset:0;opacity:0}
@@ -272,13 +270,13 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
 .galeria__principal{
   border:1px solid var(--linea);aspect-ratio:1;display:grid;place-items:center;overflow:hidden
 }
-.galeria__principal img{width:100%;height:100%;object-fit:contain;padding:7%;mix-blend-mode:multiply}
+.galeria__principal img{width:100%;height:100%;object-fit:contain;padding:7%}
 .galeria__miniaturas{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
 .miniatura{
   width:74px;height:74px;border:1px solid var(--linea);background:#fff;padding:6px;
   transition:var(--trans)
 }
-.miniatura img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.miniatura img{width:100%;height:100%;object-fit:contain}
 .miniatura[aria-pressed="true"]{border-color:var(--negro)}
 .ficha h1{font-size:clamp(30px,4.2vw,46px);font-weight:300;margin-bottom:10px}
 .ficha__precio{font-size:24px;font-family:var(--serif);margin:22px 0 8px}
@@ -323,7 +321,7 @@ hr{border:0;border-top:1px solid var(--linea);margin:0}
   padding:22px 0;border-bottom:1px solid var(--linea)
 }
 .linea-item:first-child{border-top:1px solid var(--linea)}
-.linea-item img{width:96px;height:96px;object-fit:contain;border:1px solid var(--linea);padding:8px;mix-blend-mode:multiply}
+.linea-item img{width:96px;height:96px;object-fit:contain;border:1px solid var(--linea);padding:8px}
 .linea-item__nombre{font-family:var(--serif);font-size:19px;line-height:1.2}
 .linea-item__meta{font-size:11.5px;color:var(--tenue);letter-spacing:.06em;margin-top:3px}
 .linea-item__quitar{
