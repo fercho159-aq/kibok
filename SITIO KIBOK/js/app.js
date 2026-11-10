@@ -133,7 +133,7 @@
         (p.destacado ? '<span class="etiqueta etiqueta--oro">Destacado</span>' : '') +
         '<a class="tarjeta__link" href="producto.html?id=' + encodeURIComponent(p.id) + '">' +
           '<span class="sr">' + esc(p.nombre) + '</span></a>' +
-        '<div class="tarjeta__img">' +
+        '<div class="tarjeta__img' + (alterna ? ' tarjeta__img--doble' : '') + '">' +
           '<img class="principal" src="' + principal + '" alt="' + esc(p.nombre) + '" loading="lazy" width="600" height="600">' +
           (alterna ? '<img class="alterna" src="' + alterna + '" alt="" loading="lazy" width="600" height="600">' : '') +
         '</div>' +
